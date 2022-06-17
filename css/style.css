@@ -11,7 +11,8 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background:linear-gradient(#87CEEB,#E0F6FF);
+    
+    
 }
 
 .pipe {
@@ -36,10 +37,61 @@
     animation: clouds-animation 20s infinite linear;
 }
 .score{
+    font-family: 'Press Start 2P', cursive;
     position: absolute;
-    font-size: 40px;
+    font-size: 30px;
     right: 0;    
     animation: score-animation 5s infinite ease-in-out;
+}
+.message{
+    font-family: 'Press Start 2P', cursive;
+
+    width: 350px;
+    height: 250px;
+
+    background-color: rgb(75, 38, 38);
+    border-top: 35px solid #36dd03;
+    border-radius: 10px;
+    
+    position: absolute;
+    right: 40%;
+    top: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    visibility: hidden;
+
+}
+.message h1{
+    font-size: 32px;
+    color: #fff;
+} 
+.message h2{
+    font-size: 32px;
+    color: #fff;
+}
+.message .again{
+    width: 50px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10%;
+    
+
+}
+.again img{
+    width: 32px;
+    height: 32px;
 }
 
 @keyframes pipe-animation {
