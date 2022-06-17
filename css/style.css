@@ -7,7 +7,7 @@
 .game-board {
     width: 100%;
     height: 500px;
-    border-bottom: 15px solid rgb(60, 255, 0);
+    border-bottom: 15px solid #3cff00;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -34,6 +34,12 @@
     position: absolute;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
+}
+.score{
+    position: absolute;
+    font-size: 40px;
+    right: 0;    
+    animation: score-animation 5s infinite ease-in-out;
 }
 
 @keyframes pipe-animation {
@@ -69,5 +75,25 @@
     }
     to{
         right: 100%;
+    }
+}
+@keyframes score-animation{
+    0%{
+        color: #ff0000;
+    }
+    20%{
+        color: #ffa500;
+    }
+    40%{
+        color: #ffff00;
+    }
+    60%{
+        color: #008000;
+    }
+    80%{
+        color: #0000ff;
+    }
+    100%{
+        color: #ee82ee;
     }
 }
